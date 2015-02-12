@@ -7,13 +7,11 @@
 
 #include "LanguageManager.h"
 
+LanguageManager* LanguageManager::_instance = 0;
+
 LanguageManager::~LanguageManager() {
 	// TODO Auto-generated destructor stub
 }
-
-#include "LanguageManager.h"
-
-LanguageManager* LanguageManager::_instance = 0;
 
 LanguageManager::LanguageManager()
 {
@@ -53,5 +51,5 @@ LanguageManager* LanguageManager::getInstance()
 
 string LanguageManager::getStringForKey(string key)
 {
-    return document[key.c_str()].GetString();
+	return document[key.c_str()].GetString();
 }
