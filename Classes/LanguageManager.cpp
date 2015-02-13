@@ -25,6 +25,9 @@ LanguageManager::LanguageManager()
     case LanguageType::RUSSIAN:
         fileName = "ru.json";
         break;
+	case LanguageType::SPANISH:
+		fileName = "es.json";
+		break;
     default:
         CCLOG("Unknown language. Use english");
         fileName = "en.json";
