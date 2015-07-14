@@ -8,12 +8,12 @@
 #ifndef LANGUAGEMANAGER_H_
 #define LANGUAGEMANAGER_H_
 
-//#include "cocos-ext.h"
+#include "cocos-ext.h"
 //#include <string>
 
 #include "cocos2d.h"
-#include "json\rapidjson.h"
-#include "json\document.h"
+//#include "json\rapidjson.h"
+//#include "json\document.h"
 
 using std::string;
 USING_NS_CC;
