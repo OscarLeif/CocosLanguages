@@ -8,13 +8,15 @@
 #ifndef LANGUAGEMANAGER_H_
 #define LANGUAGEMANAGER_H_
 
+
 #include "cocos-ext.h"
 //#include <string>
-
 #include "cocos2d.h"
-//#include "json\rapidjson.h"
-//#include "json\document.h"
 
+#if(CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+	#include "json\rapidjson.h"
+	#include "json\document.h"
+#endif
 using std::string;
 USING_NS_CC;
 
