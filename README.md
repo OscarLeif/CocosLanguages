@@ -1,6 +1,6 @@
 # Multi-Languages-Cocos-2d-x
-This is an example of multi language for cocos 2d-x v 3.x.
-Right now I update the soure files to the version 3.4. I will update this files if there's a new version of cocos 2d-x. This is based on this post originaly created by Den, take a look here for the original example.
+This is an example of multi language for cocos 2d-x v 3.x
+Right now I update the soure files to the version 3.4. I will update this files if there's a new version of cocos2d-x. This is based on this post originaly created by Den, take a look here for the original example.
 
 http://discuss.cocos2d-x.org/t/tutorial-multiple-language-support/16237
 
