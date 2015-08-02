@@ -1,35 +1,21 @@
-/*//
- * LanguageManager.h
- *
- *  Created on: Feb 1, 2015
- *      Author: OscarLeif
- */
+#ifndef LanguageManager_h
+#define LanguageManager_h
 
-#ifndef LANGUAGEMANAGER_H_
-#define LANGUAGEMANAGER_H_
-
-
-#include "cocos-ext.h"
-//#include <string>
-#include "cocos2d.h"
-
-#if(CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-	#include "json\rapidjson.h"
-	#include "json\document.h"
-#endif
+#include <string>
 using std::string;
-USING_NS_CC;
 
+#include "json/rapidjson.h"
+#include "json/document.h"
 using namespace rapidjson;
 
-class LanguageManager{
+class LanguageManager
+{
+    Document _document;
+    LanguageManager();
+    static LanguageManager* _instance;
 public:
-	Document document;
-	LanguageManager();
-	virtual ~LanguageManager();
-	static LanguageManager* _instance;
-	static LanguageManager* getInstance();
-	string getStringForKey(string key);
+    static LanguageManager* getInstance();
+    string getStringForKey(string key) const;
 };
 
-#endif /* LANGUAGEMANAGER_H_ */
+#endif

@@ -30,7 +30,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview = GLViewImpl::create("My Game");
         director->setOpenGLView(glview);
     }
-
+	FileUtils::getInstance()->addSearchPath("language");
     // turn on display FPS
     director->setDisplayStats(true);
 
