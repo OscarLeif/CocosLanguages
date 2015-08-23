@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "org.cocos2dx.multi-languague"
+        applicationId "org.cocos2dx.CocosLanguages"
         minSdkVersion 10
         targetSdkVersion 22
         versionCode 1

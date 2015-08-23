@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="1547cf35-0745-41a4-b988-3534afbe2f39" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>multi-languague</DisplayName>
+    <DisplayName>CocosLanguages</DisplayName>
     <PublisherDisplayName>"Microsoft Open Technologies, Inc."</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="multi-languague.App">
+      EntryPoint="CocosLanguages.App">
       <uap:VisualElements
-        DisplayName="multi-languague"
+        DisplayName="CocosLanguages"
         Square150x150Logo="Assets\Logo.png"
         Square44x44Logo="Assets\SmallLogo.png"
-        Description="multi-languague"
+        Description="CocosLanguages"
         BackgroundColor="#464646">
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
         <uap:InitialRotationPreference>

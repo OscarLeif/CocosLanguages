@@ -73,7 +73,7 @@
     <AppxManifest Include="Package.appxmanifest" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="multi-languague_TemporaryKey.pfx" />
+    <None Include="CocosLanguages_TemporaryKey.pfx" />
     <None Include="$(AngleBinPath)libEGL.dll" />
     <None Include="$(AngleBinPath)libGLESv2.dll" />
     <None Include="$(ZLibBinPath)zlib.dll" />
