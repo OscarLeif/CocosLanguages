@@ -55,14 +55,14 @@ bool HelloWorld::init()
 	// add a label shows "Hello World"
 	// create and initialize a label
 
-	auto label = Label::createWithTTF("Hello World Testing strings", "fonts/Marker Felt.ttf", 24);
-
-
-	auto labelPlay = Label::createWithTTF(LanguageManager::getInstance()->getStringForKey("pause_layer_pause_title"), "fonts/Marker Felt.ttf", 55);
-	labelPlay->setPosition(Vec2(origin.x + visibleSize.width / 2,visibleSize.height*0.8));
-	// position the label on the center of the screen
+	auto label = Label::createWithTTF("Hello Languages", "fonts/Marker Felt.ttf", 80);
 	label->setPosition(Vec2(origin.x + visibleSize.width / 2,
-		origin.y + visibleSize.height - label->getContentSize().height));
+							origin.y + visibleSize.height - label->getContentSize().height));
+
+	auto labelPlay = Label::createWithTTF(LanguageManager::getInstance()->getStringForKey("pause_layer_pause_title"), "fonts/Marker Felt.ttf", 70);
+	labelPlay->setPosition(Vec2(origin.x + visibleSize.width / 2,visibleSize.height*0.15f));
+	// position the label on the center of the screen
+
 
 	// add the label as a child to this layer
 	this->addChild(labelPlay,1);

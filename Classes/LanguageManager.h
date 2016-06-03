@@ -1,11 +1,17 @@
-#ifndef LanguageManager_h
-#define LanguageManager_h
+//
+// Created by OscarLeif on 6/1/2016.
+//
+
+#ifndef PROJ_ANDROID_STUDIO_LANGUAGEMANAGER_H
+#define PROJ_ANDROID_STUDIO_LANGUAGEMANAGER_H
+
 
 #include <string>
 using std::string;
 
-#include "json/rapidjson.h"
-#include "json/document.h"
+#include "../cocos2d/external/json/document.h"
+#include "../cocos2d/external/json/rapidjson.h"
+
 using namespace rapidjson;
 
 class LanguageManager
@@ -18,4 +24,5 @@ public:
     string getStringForKey(string key) const;
 };
 
-#endif
+
+#endif //PROJ_ANDROID_STUDIO_LANGUAGEMANAGER_H
